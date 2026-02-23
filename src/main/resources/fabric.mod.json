@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "antipickup",
+  "version": "${version}",
+  "name": "Anti-Pickup",
+  "description": "Whitelist/blacklist items and blocks to control what you pick up",
+  "authors": [
+    "Jello"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/antipickup/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.jellomakker.antipickup.AntiPickupMod"
+    ],
+    "modmenu": [
+      "com.jellomakker.antipickup.screen.AntiPickupModMenuIntegration"
+    ]
+  },
+  "mixins": [
+  ],
+  "accessWidener": "antipickup.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=1.21 <=1.21.4",
+    "java": ">=21"
+  }
+}
